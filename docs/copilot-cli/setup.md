@@ -26,7 +26,7 @@ If you're reading this wiki, you probably already have Git — but just in case,
 
 ### 2. Node.js
 
-The Copilot CLI is a Node.js-based tool, so this is a hard dependency.
+Node.js is only required if you plan to install Copilot CLI via `npm`. If you're using Homebrew on macOS or WinGet on Windows, you can skip this step.
 
 **Windows (winget):**
 ```powershell
@@ -72,11 +72,41 @@ winget install GitHub.Copilot
 
 **macOS (Homebrew):**
 ```bash
-brew install gh
-gh extension install github/gh-copilot
+brew install copilot-cli
+```
+
+**All platforms (npm):**
+```bash
+npm install -g @github/copilot
 ```
 
 After installation, restart your terminal. You should now have access to the `copilot` command.
+
+> **Official docs:** For the full list of install methods (install script, direct download, prerelease versions), see the [GitHub Copilot CLI installation guide](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
+
+---
+
+## Logging In
+
+On first launch, Copilot CLI will prompt you to authenticate. Run:
+
+```
+/login
+```
+
+This opens a browser window where you sign in with your **GitHub account**. Once authenticated, you're ready to start chatting.
+
+### Choosing a Model
+
+After logging in, you can switch the underlying AI model to match your task. Use the `/model` command:
+
+```
+/model
+```
+
+This presents a list of available models (e.g., GPT-4o, Claude Sonnet, o3-mini). Select the one you want and Copilot will use it for all subsequent interactions in that session. I typically use GPT-4o for general queries and switch to a reasoning model (like o3-mini) when I need deeper analysis.
+
+> **Tip:** Your model choice persists across sessions, so you only need to set it once unless you want to change it.
 
 ---
 
