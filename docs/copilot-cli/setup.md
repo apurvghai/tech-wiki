@@ -1,4 +1,12 @@
+---
+layout: default
+title: Setup Guide
+parent: Copilot CLI
+nav_order: 1
+---
+
 # My Copilot CLI Setup: How I Get Things Done on Windows & macOS
+{: .fs-8 }
 
 I've been using GitHub Copilot CLI as part of my daily workflow for a while now, and it's genuinely changed how productive I feel — especially in a corporate environment with Work IQ. This guide documents exactly how I set things up on both my Windows desktop and my Mac. It's not an official manual; it's just what works for me. Hopefully it saves you the trial-and-error I went through.
 
