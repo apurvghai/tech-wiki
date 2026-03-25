@@ -104,7 +104,7 @@ After logging in, you can switch the underlying AI model to match your task. Use
 /model
 ```
 
-This presents a list of available models (e.g., GPT-4o, Claude Sonnet, o3-mini). Select the one you want and Copilot will use it for all subsequent interactions in that session. I typically use GPT-4o for general queries and switch to a reasoning model (like o3-mini) when I need deeper analysis.
+This presents a list of available models (e.g., GPT-4o, Claude Sonnet, o3-mini). Select the one you want and Copilot will use it for all subsequent interactions in that session.
 
 > **Tip:** Your model choice persists across sessions, so you only need to set it once unless you want to change it.
 
