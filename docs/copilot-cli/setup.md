@@ -1,6 +1,6 @@
-# My Copilot CLI Setup: How I Get Things Done on Windows
+# My Copilot CLI Setup: How I Get Things Done on Windows & macOS
 
-I've been using GitHub Copilot CLI as part of my daily workflow for a while now, and it's genuinely changed how productive I feel — especially in a corporate environment with Work IQ. This guide documents exactly how I set things up on my Windows desktop. It's not an official manual; it's just what works for me. Hopefully it saves you the trial-and-error I went through.
+I've been using GitHub Copilot CLI as part of my daily workflow for a while now, and it's genuinely changed how productive I feel — especially in a corporate environment with Work IQ. This guide documents exactly how I set things up on both my Windows desktop and my Mac. It's not an official manual; it's just what works for me. Hopefully it saves you the trial-and-error I went through.
 
 > **Note:** While most of these steps work anywhere, the Work IQ integration gives you the most value when you're on your corporate network. That said, Copilot CLI itself is useful regardless of where you're working from.
 
@@ -8,12 +8,18 @@ I've been using GitHub Copilot CLI as part of my daily workflow for a while now,
 
 ## Prerequisites
 
-Before diving in, make sure you have the following on your machine. I use [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) to keep installs clean and repeatable.
+Before diving in, make sure you have the following on your machine. I use [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) on Windows and [Homebrew](https://brew.sh/) on macOS to keep installs clean and repeatable.
 
 ### 1. Git
 
+**Windows (winget):**
 ```powershell
 winget install -e --id Git.Git
+```
+
+**macOS (Homebrew):**
+```bash
+brew install git
 ```
 
 If you're reading this wiki, you probably already have Git — but just in case, this ensures you're on the exact stable release.
@@ -22,13 +28,19 @@ If you're reading this wiki, you probably already have Git — but just in case,
 
 The Copilot CLI is a Node.js-based tool, so this is a hard dependency.
 
+**Windows (winget):**
 ```powershell
 winget install -e --id OpenJS.NodeJS
 ```
 
+**macOS (Homebrew):**
+```bash
+brew install node
+```
+
 After installation, open a new terminal and confirm:
 
-```powershell
+```bash
 node --version
 npm --version
 ```
@@ -37,8 +49,14 @@ npm --version
 
 Required if you're working with Azure-backed services or authenticating through your corporate identity.
 
+**Windows (winget):**
 ```powershell
 winget install -e --id Microsoft.AzureCLI
+```
+
+**macOS (Homebrew):**
+```bash
+brew install azure-cli
 ```
 
 ---
@@ -47,8 +65,15 @@ winget install -e --id Microsoft.AzureCLI
 
 Once your prerequisites are in place, install the Copilot CLI itself:
 
+**Windows (winget):**
 ```powershell
 winget install GitHub.Copilot
+```
+
+**macOS (Homebrew):**
+```bash
+brew install gh
+gh extension install github/gh-copilot
 ```
 
 After installation, restart your terminal. You should now have access to the `copilot` command.
@@ -101,13 +126,14 @@ It's a much more comprehensive reference for everything Copilot CLI can do.
 
 ## Quick Reference
 
-| Tool | Install Command |
-|---|---|
-| Git | `winget install -e --id Git.Git` |
-| Node.js | `winget install -e --id OpenJS.NodeJS` |
-| Azure CLI | `winget install -e --id Microsoft.AzureCLI` |
-| GitHub Copilot CLI | `winget install GitHub.Copilot` |
-| Handy (speech-to-text) | [handy.computer](https://handy.computer/) |
+| Tool | Windows (winget) | macOS (Homebrew) |
+|---|---|---|
+| Git | `winget install -e --id Git.Git` | `brew install git` |
+| Node.js | `winget install -e --id OpenJS.NodeJS` | `brew install node` |
+| Azure CLI | `winget install -e --id Microsoft.AzureCLI` | `brew install azure-cli` |
+| GitHub CLI | `winget install GitHub.Copilot` | `brew install gh` |
+| Copilot CLI extension | *(bundled)* | `gh extension install github/gh-copilot` |
+| Handy (speech-to-text) | [handy.computer](https://handy.computer/) | [handy.computer](https://handy.computer/) |
 
 | Plugin Command | Purpose |
 |---|---|
