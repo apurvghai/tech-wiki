@@ -1,4 +1,4 @@
-# Getting Started with GitHub Copilot CLI — My Personal Setup Guide
+# My Copilot CLI Setup: How I Get Things Done on Windows
 
 I've been using GitHub Copilot CLI as part of my daily workflow for a while now, and it's genuinely changed how productive I feel — especially in a corporate environment with Work IQ. This guide documents exactly how I set things up on my Windows desktop. It's not an official manual; it's just what works for me. Hopefully it saves you the trial-and-error I went through.
 
@@ -91,7 +91,7 @@ I like talking through problems more than typing them, so I installed [Handy](ht
 
 ## Want to Go Deeper?
 
-This guide covers the basics of my setup — enough to get you productive. But if you want to go further with advanced configuration, custom plugins, or more nuanced workflows, check out the community guide by Nisha Anil:
+This guide covers the basics of my setup — enough to get you productive. But if you want to go further with advanced configuration, custom plugins, or more nuanced workflows, check out the community guide by Nish Anil:
 
 👉 **[nishanil.github.io/copilot-guide](https://nishanil.github.io/copilot-guide/)**
 
