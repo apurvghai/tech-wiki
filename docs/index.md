@@ -91,7 +91,6 @@ This wiki is maintained by developers, for developers. Each guide is based on re
 Have a better way to do something? Found an error? Contributions are welcome!
 
 [Learn how to contribute](contributing/){: .btn }
-See the [Contributing Guide](contributing/) for details.
 
 ---
 

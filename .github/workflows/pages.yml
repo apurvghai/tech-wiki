@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - copilot/address-theme-concerns
+      - main
 
 permissions:
   contents: read
