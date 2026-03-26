@@ -1,5 +1,7 @@
 title: Tech Wiki
 description: A comprehensive wiki for all tech stuff
+url: https://apurvghai.github.io
+baseurl: /tech-wiki
 
 # Theme settings - Just the Docs provides modern wiki-style layout
 remote_theme: just-the-docs/just-the-docs@v0.10.0
@@ -37,10 +39,8 @@ back_to_top_text: "Back to top"
 
 # External navigation links (top header)
 aux_links:
-  "Docs":
-    - "/"
   "Contribute":
-    - "/contributing"
+    - "/tech-wiki/contributing/"
 
 aux_links_new_tab: false
 
